@@ -8,16 +8,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Email = $_POST["Email"];
     $Password = $_POST["Password"];
     $ConfirmPassword = $_POST["ConPassword"];
-    $exists = false;
+    // $exists = false;
 
-    if (($Password == $ConfirmPassword) && $exists == false) {
-        $sql = "INSERT INTO `users` (`Username`, `Email`, `Password`) VALUES ('$Username', '$Email', '$Password')";
-        $result = mysqli_query($conn, $sql);
-        if ($result) {
-            $showAlert = true;
-        }
+    $existsSql = "SELECT * FROM `users` WHERE Username = '$Username'";
+    $result = mysqli_query($conn, $existsSql);
+    $numExistsRow = mysqli_num_rows($result);
+    if ($numExistsRow > 0) {
+        $showError = "Username Already Exists";
     } else {
-        $showError = "Password do not match.";
+
+        if (($Password == $ConfirmPassword)) {
+            $hash = password_hash($Password, PASSWORD_DEFAULT);
+            $sql = "INSERT INTO `users` (`Username`, `Email`, `Password`) VALUES ('$Username', '$Email', '$hash')";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                $showAlert = true;
+                header("refresh:1; url=login.php");
+            }
+        } else {
+            $showError = "Password do not match.";
+        }
     }
 }
 

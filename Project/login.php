@@ -7,17 +7,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Username = $_POST["Username"];
     $Password = $_POST["Password"];
 
-    $sql = "Select * from users where Username='$Username' AND Password='$Password'";
+    // $sql = "Select * from users where Username='$Username' AND Password='$Password'";
+    $sql = "Select * from users where Username='$Username'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
     if ($num == 1) {
-        $login = true;
+        while ($row = mysqli_fetch_assoc($result)) {
+            if (password_verify($Password, $row['Password'])) {
+                $login = true;
+                session_start();
+                $_SESSION["loggedin"] = true;
+                $_SESSION["Username"] = $Username;
+            }
+            else{
+        $showError = "Invalid Password";
+            }
+        }
     } else {
-        $showError = "Invalid Credentials";
+        $showError = "Invalid Username";
     }
 }
 
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,6 +99,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ad5ab2e101.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript code to focus on the username input field
+        document.addEventListener("DOMContentLoaded", function() {
+            <?php if ($showError) { ?>
+                document.getElementsByName("Username")[0].focus();
+            <?php } ?>
+        });
+    </script>
+
     <script src="./script.js"></script>
 </body>
 
