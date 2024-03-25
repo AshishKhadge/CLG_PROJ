@@ -29,16 +29,20 @@ function downloadQR() {
             downloadLink.href = qrImage.src;
             downloadLink.download = "qrcode.png";
 
-            // Trigger a click event on the anchor element
+            // Trigger the download automatically
             document.body.appendChild(downloadLink);
             downloadLink.click();
             document.body.removeChild(downloadLink);
+        } else {
+            // Handle error if QR code image source is empty
+            alert("Error: QR code image source is empty. Please generate the QR code again.");
         }
     } else {
         // Handle error if QR code is not generated
         alert("Please generate a QR code first.");
     }
 }
+
 
 // Function to reset QR code
 function resetQR() {
