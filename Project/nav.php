@@ -37,10 +37,10 @@
             <form class="form-inline my-2 my-lg-0">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link fs-3 ps-5 pt-4 fw-4 text-dark fw-normal" href="#about">About</a>
+                        <a class="nav-link fs-3 ps-5 pt-4 fw-4 text-dark fw-normal" href="../Project/index.php#about">About</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link fs-3 ps-5 pt-4 text-dark fw-normal" href="#contact_us" target="_self">Contact Us</a>
+                        <a class="nav-link fs-3 ps-5 pt-4 text-dark fw-normal" href="../Project/index.php#contact_us" target="_self">Contact Us</a>
                     </li>
                 </ul>
             </form>
