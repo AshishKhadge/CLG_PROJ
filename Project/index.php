@@ -59,7 +59,7 @@
         <div id="about">
             <h2 class="fs-3 mt-5 ps-4 text-decoration-underline">About us</h2>
             <p class="fs-5 mt-3 ps-4">This project is part of the final year project for the Bachelor of Computer
-                Applications (BCA) program under the guidance of ____________. The project is developed by students of
+                Applications (BCA) program under the guidance of Prof. Avani Kulkarni. The project is developed by students of
                 <a href="https://smtmaherbanu.edu.in/" class="text-dark fs-4" target="_blank">Smt. Maherbanu College of
                     Science and Commerce, Akola.</a>
             </p>
@@ -68,30 +68,6 @@
                 providing a seamless experience for generating QR codes.</p>
             <p class="fs-5 mt-1 ps-4">Feel free to explore our QR Code Generator and utilize it for your needs!</p>
             <p class="fs-5 mt-1 ps-4">If you have any questions or feedback, please don't hesitate to <span class="highlight"><a class="text-dark fs-4" href="#contact_us">contact us</a></span>.</p>
-        </div>
-
-        <!-- line -->
-        <div class="horizontal_line"></div>
-
-        <!-- Contact us -->
-
-        <h2 class="fs-3 mt-5 ps-4 text-decoration-underline">Contact us</h2>
-        <div id="contact_us" class=" d-flex justify-content-start mt-4 ms-3">
-            <div class="logo d-flex justify-content-center me-2">
-                <a href="https://www.linkedin.com/in/ashish-khadge-441000253/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; "></i></a>
-            </div>
-            <div class="logo d-flex justify-content-center me-2">
-                <a href="https://www.instagram.com/rinku_ghatge/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff; "></i></a>
-            </div>
-            <!-- <div class="logo d-flex justify-content-center me-2">
-                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff; "></i></a>
-            </div> -->
-            <div class="logo d-flex justify-content-center me-2">
-                <a href="https://twitter.com/AshishKhadge" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #ffffff; "></i></a>
-            </div>
-            <div class="logo d-flex justify-content-center me-2">
-                <a href="mailto:ashish.hypercosmos@gmail.com" target="_blank"><i class="fa-brands fa-at" style="color: #ffffff; "></i></a>
-            </div>
         </div>
 
     </div>

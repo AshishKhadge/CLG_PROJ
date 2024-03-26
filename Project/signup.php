@@ -8,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Email = $_POST["Email"];
     $Password = $_POST["Password"];
     $ConfirmPassword = $_POST["ConPassword"];
-    // $exists = false;
 
     $existsSql = "SELECT * FROM `users` WHERE Username = '$Username'";
     $result = mysqli_query($conn, $existsSql);
