@@ -67,7 +67,7 @@
                 including URLs, text, contact information, and more. It's designed to be user-friendly and efficient,
                 providing a seamless experience for generating QR codes.</p>
             <p class="fs-5 mt-1 ps-4">Feel free to explore our QR Code Generator and utilize it for your needs!</p>
-            <p class="fs-5 mt-1 ps-4">If you have any questions or feedback, please don't hesitate to <span class="highlight"><a class="text-dark fs-4" href="#contact_us">contact us</a></span>.</p>
+            <p class="fs-5 mt-1 ps-4">If you have any questions or feedback, please don't hesitate to <span class="highlight"><a class="text-dark fs-4" href="../Project/contactus.php">contact us</a></span>.</p>
         </div>
 
     </div>
