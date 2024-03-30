@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
     if ($showAlert) {
         echo ' <div class="alerts fs-5">
-        <div class=" mx-5 alert alert-success alert-dismissible fade show" role="alert">
+        <div class=" mx-5 fs-3 alert alert-success alert-dismissible fade show" role="alert">
             <strong>Done !</strong> Your message has been submitted successfully! We will get back to you soon.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>

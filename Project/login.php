@@ -56,14 +56,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
     if ($login) {
         echo '<div class="alerts fs-5">
-        <div class=" mx-5 alert alert-success" role="alert">
+        <div class=" mx-5 fs-3 alert alert-success" role="alert">
         Login Successfull ! Here is your link <a href="../QR_Code_Generator/index.php" class="alert-link">QR Code Generator</a>. Give it a click and Explore the website.
         </div>
         </div>';
     }
     if ($showError) {
         echo ' <div class="alerts fs-5">
-        <div class=" mx-5 alert alert-danger alert-dismissible fade show" role="alert">
+        <div class=" mx-5 fs-3 alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Error !</strong> ' . $showError . '
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>

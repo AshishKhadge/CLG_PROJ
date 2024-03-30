@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
     if ($showAlert) {
         echo ' <div class="alerts fs-5">
-        <div class=" mx-5 alert alert-success alert-dismissible fade show" role="alert">
+        <div class=" mx-5 fs-3 alert alert-success alert-dismissible fade show" role="alert">
             <strong>Success !</strong> Your account is now created and You can Login.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if ($showError) {
         echo ' <div class="alerts fs-5">
-        <div class=" mx-5 alert alert-danger alert-dismissible fade show" role="alert">
+        <div class=" mx-5 fs-3 alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Error !</strong> ' . $showError . '
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
