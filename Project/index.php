@@ -45,7 +45,7 @@
                         <p class="fs-4">Generate your QR code based on your specific requirements.</p>
                     </li>
                     <li>
-                        <p class="fs-4">Enjoy exploring this website!❤️❤️</p>
+                        <p class="fs-4">Enjoy exploring this website!</p>
                     </li>
                 </ul>
             </div>
